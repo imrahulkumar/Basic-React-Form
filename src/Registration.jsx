@@ -12,8 +12,7 @@ const initialValues = {
 };
 
 const Registration = () => {
-  
-  const formik =
+   const { values, errors, touched, handleBlur, handleChange, handleSubmit } = 
     useFormik({
       initialValues,
       validationSchema: signUpSchema,
